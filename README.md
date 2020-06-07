@@ -2,5 +2,5 @@
 
 The Monokai theme for Obsidian. 
 
-![preview.png](https://github.com/Philipp0205/monokai-for-obsidian/preview.png)Z
+![preview.png](https://github.com/Philipp0205/monokai-for-obsidian/blob/master/preview.png)
 
