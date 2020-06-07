@@ -6,6 +6,8 @@
 
     --accent: #c1c0c0;
 
+    --plainwhite: white;
+
     --light0: #d8dee9;
     --light1: #e5e9f0;
     --light2: #eceff4;
@@ -16,18 +18,17 @@
     --green:  #a9dc76;
     --blue:   #78dce8;
     --purple: #ab9df2;
-    --white:  white;
 }
 
 .theme-dark,
 .theme-light
 {
-    --font-monospace: 'jetbrains mono', monospace;
+    --font-monospace: 'Ubunut Mono', monospace;
     --background-primary:         var(--dark0);
     --background-primary-alt:     var(--dark0);
     --background-secondary:       var(--dark1);
     --background-secondary-alt:   var(--dark1);
-    --text-normal:                var(--light2);
+    --text-normal:                var(--plainwhite);
     --text-faint:                 var(--light0);
     --text-muted:                 var(--light1);
     --text-title-h1:              var(--red);
@@ -36,11 +37,10 @@
     --text-title-h4:              var(--green);
     --text-title-h5:              var(--purple);
     --text-link:                  var(--yellow);
-    --text-a:                     var(--yellow);
-    --text-a-hover:               var(--white);
+    --text-a:                     var(--purple);
+    --text-a-hover:               var(--light0);
     --text-mark:                  var(--yellow);
     --pre-code:                   var(--dark1);
-    --text-highlight-bg:          var(--yellow);
     --interactive-accent:         var(--accent);
     --interactive-before:         var(--dark0);
     --background-modifier-border: var(--dark1);
@@ -48,8 +48,9 @@
     --interactive-accent-rgb:     var(--orange);
     --inline-code:                var(--red);
     --code-block:                 var(--red);
-    --vim-cursor:                 var(--white);
+    --vim-cursor:                 var(--light0);
 
+    /* --text-highlight-bg:          none; */
 }
 
 .markdown-source-view { font-family: "jetbrains mono ", monospace; }
@@ -99,11 +100,6 @@ a:hover,
     color: var(--text-a-hover) !important;
 }
 
-mark
-{
-    background-color: var(--text-mark) !important;
-    color: var(--dark2) !important;
-}
 
 .view-actions a
 {
@@ -135,18 +131,6 @@ mark
     border-bottom-right-radius: 4px !important;
 }
 
-.HyperMD-table-row
-{
-    line-height: normal !important;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-    background-color: var(--pre-code) !important;
-}
-
-.HyperMD-table-row-0
-{
-    /* padding-top: 4px !important; */
-}
 
 .CodeMirror-foldgutter-folded,
 .is-collapsed .nav-folder-collapse-indicator
@@ -173,6 +157,12 @@ mark
 
 .cm-formatting.cm-formatting-task.cm-meta {
     color: darkgray;
+}
+
+.cm-hmd-table-sep { color: darkgray !important; }
+
+[role=presentaton] {
+    color: darkgray !important;
 }
 
 .cm-inline-code
@@ -235,16 +225,6 @@ mark
     border: 5px solid var(--interactive-accent) !important;
 }
 
-.checkbox-container
-{
-    background-color: var(--interactive-before);
-}
-
-.checkbox-container:after
-{
-    background-color: var(--background-secondary-alt);
-}
-
 .mod-cta
 {
     color: var(--background-secondary-alt) !important;
@@ -257,15 +237,15 @@ mark
     font-weight: 600 !important;
 }
 
-.CodeMirror pre.CodeMirror-line
-{
-    z-index: auto !important;
-}
-
 .CodeMirror-cursor
 {
     background-color: var(--vim-cursor) !important;
     opacity: 60% !important;
+}
+
+
+.workspace-leaf.mod-active .view-header-title-container:after {
+    background: none;
 }
 
 
