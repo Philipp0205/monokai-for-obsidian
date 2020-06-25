@@ -1,0 +1,227 @@
+
+:root
+{
+    --dark0:  #2d2a2e;
+    --dark1:  #221f22;
+    --dark3:  #1a1e24;
+
+    --accent: #c1c0c0;
+
+    --plainwhite: white;
+
+    --light0: #d8dee9;
+    --light1: #e5e9f0;
+    --light2: #eceff4;
+
+    --red:    #ff6188;
+    --orange: #fc9867;
+    --yellow: #ebcb8b;
+    --green:  #a9dc76;
+    --blue:   #78dce8;
+    --purple: #ab9df2;
+}
+
+.theme-dark,
+.theme-light
+{
+    --font-monospace: 'Ubunut Mono', monospace;
+    --background-primary:         var(--dark0);
+    --background-primary-alt:     var(--dark1);
+    --background-secondary:       var(--dark1);
+    --background-secondary-alt:   var(--dark0);
+    --text-normal:                var(--plainwhite);
+    --text-faint:                 var(--light0);
+    --text-muted:                 var(--light1);
+    --text-title-h1:              var(--red);
+    --text-title-h2:              var(--orange);
+    --text-title-h3:              var(--yellow);
+    --text-title-h4:              var(--green);
+    --text-title-h5:              var(--purple);
+    --text-link:                  var(--yellow);
+    --text-a:                     var(--purple);
+    --text-a-hover:               var(--light0);
+    --text-mark:                  var(--yellow);
+    --pre-code:                   var(--dark1);
+    --interactive-accent:         var(--accent);
+    --interactive-before:         var(--dark0);
+    --background-modifier-border: var(--dark1);
+    --text-accent:                var(--orange);
+    --interactive-accent-rgb:     var(--orange);
+    --inline-code:                var(--red);
+    --code-block:                 var(--red);
+    --vim-cursor:                 var(--light0);
+
+    /* --text-highlight-bg:          none; */
+}
+
+.markdown-source-view { font-family: "jetbrains mono ", monospace; }
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none !important;
+    background-color: var(--pre-code) !important;
+}
+
+html,
+body
+{
+    font-size: 16px !important;
+}
+
+strong
+{
+    font-weight: 600 !important;
+}
+
+a,
+.cm-hmd-internal-link
+{
+    color: var(--text-a) !important;
+    text-decoration: none !important;
+}
+
+a:hover,
+.cm-hmd-internal-link:hover,
+.cm-url
+{
+    color: var(--text-a-hover) !important;
+}
+
+
+.view-actions a
+{
+    color: var(--text-normal) !important;
+}
+
+.view-actions a:hover
+{
+    color: var(--text-a) !important;
+}
+
+/* Markdown code block */
+.HyperMD-codeblock
+{
+    line-height: 1.4em !important;
+    background-color: var(--pre-code) !important;
+    color: var(--code-block) !important;
+}
+
+.nav-folder-collapse-indicator
+{
+    color: var(--yellow) !important;
+}
+
+.nav-file-tag
+{
+    color: var(--text-a) !important;
+}
+
+.is-active .nav-file-title
+{
+    color: var(--text-a) !important;
+    background-color: var(--background-primary-alt) !important;
+}
+
+.CodeMirror-linenumber,
+.cm-formatting
+{
+    font-family: var(--font-monospace) !important;
+}
+
+.cm-formatting.cm-formatting-task.cm-meta {
+    color: darkgray;
+}
+
+.cm-hmd-table-sep { color: darkgray !important; }
+
+[role=presentaton] {
+    color: darkgray !important;
+}
+
+.cm-inline-code
+{
+    color: var(--inline-code) !important;
+    background-color: var(--pre-code) !important;
+    padding: 1px !important;
+}
+/*
+.cm-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500 !important;
+    font-size: 34px !important;
+    color: var(--text-title-h1) !important;
+}
+
+.cm-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500 !important;
+    font-size: 26px !important;
+    color: var(--text-title-h2) !important;
+}
+
+.cm-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    color: var(--text-title-h3) !important;
+}
+
+.cm-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    color: var(--text-title-h4) !important;
+}
+
+.cm-header-5,
+.cm-header-6,
+.markdown-preview-section h5,
+.markdown-preview-section h6
+{
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: var(--text-title-h5) !important;
+}
+*/
+
+.suggestion-item.is-selected
+{
+    background-color: var(--background-secondary);
+}
+
+.cm-formatting-header-1 {
+    color: var(--red);
+}
+
+.cm-formatting {
+    font-weight: bold;
+
+}
+
+.cm-formatting-header-2 {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.cm-formatting-header-3 {
+    color: var(--yellow);
+}
+
+.cm-formatting-header-4 {
+    color: var(--green);
+}
+
+.cm-formatting-header-5 {
+    color: var(--purple);
+}
+
+
+
+
