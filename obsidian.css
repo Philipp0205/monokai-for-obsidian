@@ -23,7 +23,7 @@
 .theme-dark,
 .theme-light
 {
-    --font-monospace: 'Ubunut Mono', monospace;
+    --font-monospace: 'Ubuntu Mono', monospace;
     --background-primary:         var(--dark0);
     --background-primary-alt:     var(--dark0);
     --background-secondary:       var(--dark1);
